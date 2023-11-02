@@ -1,0 +1,119 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #af67e9, #9f67e9, #8d66e9, #7a66e8, #6565e7);
+    font-family: 'Kumbh Sans', sans-serif;
+    align-items: center;
+}
+
+.faq-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    margin-top: 4em;
+    padding-top: 7em;
+    padding-bottom: 3em;
+    background-color: white;
+    border-radius: 1.5em;
+    position: relative;
+    top: 8%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h1{
+    color: hsl(237, 12%, 23%);
+}
+
+.mobile-illustration{
+    position: absolute;
+    width: 65%;
+    top: 1em;
+    left: 17vw;
+    z-index: 2;
+}
+.shadow{
+    width: 65%;
+    position: absolute;
+    border-radius: 1em;
+    top: 9em;
+    left: 17vw;
+    z-index: 1;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+details{
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom-style: solid;
+    border-bottom-color: hsl(240, 5%, 91%);
+    border-bottom-width: .1em;
+    text-align: center;
+    width: 85%;
+}
+summary{
+    list-style: none;
+    display: flex;
+    font-size: .9em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: hsl(237, 12%, 23%);
+}
+summary:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+summary img{
+    width: .8em;
+    height: .8em;
+}
+p{
+    color: hsl(240, 6%, 50%);
+    font-size: .8em;
+}
+.desktop-illustration{
+    display: none;
+}
+.desktop-box{
+    display: none;  
+}
+
+@media screen and (min-width: 1200px){
+    .mobile-illustration, .shadow{
+        display: none;
+    }
+    .desktop-illustration{
+        display: block;
+        position: relative;
+        left: -4em;
+    }
+    .desktop-box{
+        display: block;
+        position: absolute;
+        left: -5em;
+    }
+    .faq-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 15em;
+        margin-right: 15em;
+        padding: 2em;
+        padding-bottom: 6em;
+    }
+    .info-box{
+        width: 50%;
+    }
+    h1{
+        align-self: flex-start;
+        margin-left: 1.2em;
+    }
+}
