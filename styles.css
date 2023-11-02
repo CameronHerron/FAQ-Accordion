@@ -85,6 +85,9 @@ p{
 .desktop-box{
     display: none;  
 }
+.desktop-shadow{
+    display: none;
+}
 
 @media screen and (min-width: 1200px){
     .mobile-illustration, .shadow{
@@ -94,6 +97,12 @@ p{
         display: block;
         position: relative;
         left: -4em;
+    }
+    .desktop-shadow{
+        display: block;
+        position: absolute;
+        left: -2em;
+        width: 30em;
     }
     .desktop-box{
         display: block;
